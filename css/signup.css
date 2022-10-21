@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.3s ease-in-out;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-padding-top: 7rem;
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+.login-btn-wrp {
+  text-align: center;
+}
+.login-btn-wrp .login-btn {
+  display: inline-block;
+  font-size: 2.5rem;
+  color: #443;
+  border: 0.2rem solid #443;
+  border-radius: 95% 4% 97% 5%/4% 94% 3% 95%;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0.9rem 2.5rem;
+  background: none;
+}
+.login-btn-wrp .login-btn:hover {
+  border-radius: 4% 95% 6% 95%/95% 4% 92% 5%;
+  border: 0.2rem dashed #443;
+}
+
+body {
+  background: url("../image/home-bg.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0rem 2rem;
+  height: 100%;
+}
+body .container-wrp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+body .container-wrp .container {
+  width: 60rem;
+  border: 0.2rem solid #443;
+  border-radius: 4% 95% 6% 95%/95% 4% 92% 5%;
+  padding: 2rem 4rem;
+}
+body .container-wrp .container header {
+  font-size: 2rem;
+  text-align: center;
+}
+body .container-wrp .container .signin a {
+  border-bottom: 0.2rem dashed #443;
+  color: blue;
+}
+body .container-wrp .container .form {
+  gap: 1.5rem;
+}
+body .container-wrp .container .form .form-control {
+  position: relative;
+  padding: 2.5rem 0rem;
+}
+body .container-wrp .container .form .form-control label {
+  width: 100%;
+  font-size: 2rem;
+}
+body .container-wrp .container .form .form-control input {
+  font-size: 2rem;
+  width: 100%;
+  padding: 1rem 2rem;
+  border: 0.2rem solid #443;
+  background: none;
+  border-radius: 0.5rem;
+}
+body .container-wrp .container .form .form-control i {
+  position: absolute;
+  top: 7.2rem;
+  right: 2rem;
+  font-size: 2rem;
+  visibility: hidden;
+}
+body .container-wrp .container .form .form-control small {
+  position: absolute;
+  bottom: 0;
+  left: 1rem;
+  font-size: 1.6rem;
+  visibility: hidden;
+}
+body .container-wrp .container .form .form-control.success input {
+  border-color: #2ecc71;
+}
+body .container-wrp .container .form .form-control.success i.fa-circle-check {
+  visibility: visible;
+  color: #2ecc71;
+}
+body .container-wrp .container .form .form-control.error input {
+  border-color: #e74c3c;
+}
+body .container-wrp .container .form .form-control.error i.fa-exclamation-circle {
+  visibility: visible;
+  color: #e74c3c;
+}
+body .container-wrp .container .form .form-control.error small {
+  visibility: visible;
+  color: #e74c3c;
+}/*# sourceMappingURL=signup.css.map */
